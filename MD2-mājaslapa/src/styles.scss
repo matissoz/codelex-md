@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+//split screen in two sides
+.ttl{
+  color: #2E8CAD;
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.txt{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+}
+
+.container-xxl{
+  max-width: 1920px;
+}
+
+.myBtnStyle{
+  width: 10rem;
+  height: 3rem;
+  background: #2EBAEB;
+  border-radius: 2.5rem;  
+}
+
+.hero__container{
+  background-image: url(./assets/images/bg__hero.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+
+.section{
+  width: 100%;
+  height: auto;
+}
+
+.hero__left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.brand__name__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.brand{
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.brand__2ndary{
+  line-height: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.33rem;
+}
+
+.hero__right{
+  display: flex;
+  align-items: center;
+}
+
+.hero__form__title{
+  padding: 1rem 0rem;
+}
+
+.hero__form__wrapper{
+  background-color: white;
+  border-radius: 2rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.hero__form__wrapper input{
+  margin-bottom: 1rem;
+}
+
+.hero__main__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 22rem;
+}
+
+.hero__title{
+  max-width: 30rem;
+}
+
+.hero__text{
+  padding: 2rem 0rem;
+  max-width: 30rem;
+}
+
+.hero__list{
+  padding-left: 0rem;
+}
+
+.hero__list li{
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.hero__list li::before{
+  content: url(./assets/images/list__symbol.svg);
+}
+
+.hero__list li span{
+  color: #2E8CAD;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.about__us{
+  padding: 3rem 0rem;
+}
+
+.us__middle{
+  margin: 0rem 3rem;
+}
+
+.services__wrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  padding-bottom: 6rem;
+}
+
+.services__img{
+}
+.services__title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+}
+.services__text{
+}
+
+
+.review__wrapper .ttl{
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 1rem;
+}
+
+.review__section .container-xxl{
+  background-color: #95D4EB;
+}
+
+.review__wrapper{
+  display: flex;
+  background-color: white;
+  border-radius: 2.5rem;
+  max-width: 30rem;
+}
+
+.reviewer__img{
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+}
+
+footer .container-xxl{
+  background: #47626B;
+  height: 3rem;
+}

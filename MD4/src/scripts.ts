@@ -1288,38 +1288,38 @@ console.log(task59({fn: 'Matthew', ln: 'Müller', age: 19, email: 'matthew@muell
 
 
 
-type ObjectT60 = {
-    [key: string | number]: [string | number];
-};
+// type ObjectT60 = {
+//     [key: string | number]: [string | number];
+// };
 
-const task60 = (a: ObjectT60,  c: string) => {
+// const task60 = (a: ObjectT60,  c: string) => {
 
-    let res: ObjectT59 = {};
+//     let res: ObjectT59 = {};
 
-    Object.keys(a).forEach(key => {
+//     Object.keys(a).forEach(key => {
 
-        if(key === 'fn' || key === 'ln'){
-            res[key] = a[key];
-        }
+//         if(key === 'fn' || key === 'ln'){
+//             res[key] = a[key];
+//         }
 
-        if(key === 'size'){
-            a[key] = a[key] + 'cm';
-            res[key] = a[key];
+//         if(key === 'size'){
+//             a[key] = a[key] + 'cm';
+//             res[key] = a[key];
 
-        }
+//         }
 
-        if(key === 'weight'){
-            a[key] = a[key] + 'kg';
-            res[key] = a[key];
-        }
+//         if(key === 'weight'){
+//             a[key] = a[key] + 'kg';
+//             res[key] = a[key];
+//         }
         
-    });
+//     });
 
-    return res;
-}
+//     return res;
+// }
 
-console.log('TASK60')
-console.log(task60([{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }], 'Asia'));
-console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
-console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
+// console.log('TASK60')
+// console.log(task60([{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }], 'Asia'));
+// console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
+// console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
  

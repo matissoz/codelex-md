@@ -1288,38 +1288,234 @@ console.log(task59({fn: 'Matthew', ln: 'Müller', age: 19, email: 'matthew@muell
 
 
 
-// type ObjectT60 = {
-//     [key: string | number]: [string | number];
-// };
+type ObjectT60 = {
+    [key: string | number]: string | number;
+};
 
-// const task60 = (a: ObjectT60,  c: string) => {
+const task60 = (a: any,  c: string) => {
 
-//     let res: ObjectT59 = {};
+    let res:any = [];
+    for(let i = 0; i < a.length; i++){
+        a[i]['continent'] = c;
+    }
+    return a;
+}
 
-//     Object.keys(a).forEach(key => {
-
-//         if(key === 'fn' || key === 'ln'){
-//             res[key] = a[key];
-//         }
-
-//         if(key === 'size'){
-//             a[key] = a[key] + 'cm';
-//             res[key] = a[key];
-
-//         }
-
-//         if(key === 'weight'){
-//             a[key] = a[key] + 'kg';
-//             res[key] = a[key];
-//         }
-        
-//     });
-
-//     return res;
-// }
-
-// console.log('TASK60')
-// console.log(task60([{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }], 'Asia'));
-// console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
-// console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
+console.log('TASK60')
+console.log(task60([{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }], 'Asia'));
+console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
+console.log(task60([{ city: 'Stockholm', country: 'Sweden' }, { city: 'Paris', country: 'France' }], 'Europe'));
  
+
+// TASK61
+// Write a function that takes an array of numbers as argument
+// Convert the array to an object
+// It should have a key for each unique value of the array
+// The corresponding object value should be the number of times the key occurs within the array
+
+
+
+
+
+
+type ObjectT61 = Record<string | number, number | string>
+
+const task61 = (a: number[]) => {
+
+    let res: ObjectT61 = {};
+
+    a.forEach((el) => {
+        let count = 0;
+        a.forEach((bl) => {
+            if(el == bl) count++;
+        })  
+
+        res[el] = count;
+    })
+
+    return res;
+
+}
+
+console.log('TASK61')
+console.log(task61([1,2,2,3]));
+console.log(task61([9,9,9,99]));
+console.log(task61([4,3,2,1]));
+
+
+// TASK62
+// Write a function that takes two date instances as arguments
+// It should return true if the dates are equal
+// It should return false otherwise
+
+
+
+
+
+
+
+
+const task62 = (a: Date, b: Date) => a.getTime()==b.getTime();
+
+console.log('TASK62')
+console.log(task62(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:45:00')));
+console.log(task62(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:00:00')));
+console.log(task62(new Date('2001/01/01 08:00:00'), new Date('2000/01/01 08:00:00')));
+
+
+// TASK63
+// Write a function that takes two date instances as argument
+// It should return the number of days that lies between those dates
+
+
+
+
+
+
+
+
+
+const task63 = (a: Date, b: Date) => Math.abs((a.getTime()-b.getTime()) / (24*60*60*1000));
+
+console.log('TASK63')
+console.log(task63(new Date('2020-06-11'), new Date('2020-06-01')));
+console.log(task63(new Date('2000-01-01'), new Date('2020-06-01')));
+
+
+// TASK64
+// Write a function that takes two date instances as argument
+// It should return true if they fall on the exact same day
+// It should return false otherwise
+
+
+
+
+
+
+
+
+
+
+const task64 = (a: Date, b: Date) => a.getTime()==b.getTime();
+
+console.log('TASK64')
+console.log(task64(new Date('2000/01/01'), new Date('2000/01/01')));
+console.log(task64(new Date('2000/01/01'), new Date('2000/01/02')));
+console.log(task64(new Date('2001/01/01'), new Date('2000/01/01')));
+console.log(task64(new Date('2000/11/01'), new Date('2000/01/01')));
+
+
+// TASK65
+// Write a function that takes two number arrays as parameters 
+// and return an array which contains elements from both 
+// arrays
+
+
+
+
+
+
+
+
+
+
+
+const task65 = (a: number[], b: number[]) => [...a, ...b];
+
+console.log('TASK65')
+console.log(task65([1, 2], [3, 4]));
+console.log(task65([1, 2], [3, 4, 5, 6]));
+
+// TASK66
+// Write a function that takes an array and a string as parameters 
+// and return an array which contains all elements from the given array
+// and the given string as the last element
+
+
+
+
+
+
+
+
+
+
+
+
+const task66 = (a: string[], b: string) => [...a, b];
+
+console.log('TASK66')
+console.log(task66(['Apple', 'Orange', 'Banana'], 'Kiwi'));
+
+
+// TASK67
+// Write a function that takes an array and a string as parameters 
+// and return an array which contains all elements from the given array
+// and the given string as the last element
+
+
+
+
+
+
+
+
+
+
+
+
+const task67 = (a: string[], b: string) => [b, ...a];
+
+console.log('TASK67')
+console.log(task67(['Apple', 'Orange', 'Banana'], 'Kiwi'));
+
+// TASK68
+// Write a function that takes two objects as parameters 
+// and return an object which contains properties from both 
+// objects
+
+
+
+
+
+
+
+
+
+type ObjectT68 = {
+    [key: string | number]: string | number;
+};
+
+let c: ObjectT68 = {}
+const task68 = (a: ObjectT68,  b: ObjectT68) => c = {...a, ...b};
+
+console.log('TASK68')
+console.log(task68({ a:1, b:2 }, { c:3, d:4 }));
+console.log(task68({ a:1, b:2 }, { c:3, d:4, e:5, f:6 }));
+
+// TASK69
+// Write a function that takes an object and a string as parameters 
+// and return an object which contains properties from the given object
+// and a new property favoriteMovie with the value equal to the given string
+
+
+
+
+
+
+
+
+
+
+type ObjectT69 = {
+    [key: string | number]: string | number;
+};
+
+
+const task69 = (a: ObjectT68,  b: string) => {
+    return {...a, 'favoriteMovie':b};
+};
+
+console.log('TASK69')
+console.log(task69({ eyeColor: 'green', age: 10 }, 'Garfield') );
+console.log(task69({ eyeColor: 'blue', age: 15 }, 'Twilight'));

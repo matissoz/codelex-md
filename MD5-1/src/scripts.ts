@@ -272,7 +272,7 @@ type EUR = 'EUR';
 //  both EUR and USD. How can you define two possible
 //  types for one type? (we have seen before
 //  with numbers and strings).
-type Currency = USD | EUR;
+type Currency = USD | EUR | undefined;
 const firstCurrency: Currency = 'USD';
 const secondCurrency: Currency = 'EUR';
 const usd: USD = firstCurrency;
@@ -313,7 +313,7 @@ console.log(someCurrency)
 //  the type errors.
 type AccountWithOrWithoutCurrency = {
     name: string,
-    currency: 'USD' | 'EUR' | undefined,
+    currency: Currency,
 }
 const removeCurrency = (account: AccountWithOrWithoutCurrency): AccountWithOrWithoutCurrency => {
 

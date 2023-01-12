@@ -1292,7 +1292,7 @@ type ObjectT60 = {
     [key: string | number]: string | number;
 };
 
-const task60 = (a: any,  c: string) => {
+const task60 = (a: ObjectT60[],  c: string) => {
 
     let res:any = [];
     for(let i = 0; i < a.length; i++){

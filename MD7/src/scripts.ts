@@ -148,12 +148,6 @@ box5.addEventListener('mouseout',()=>{
 const input = document.querySelector(".input");
 const output = document.querySelector(".output");
 
-//1. e: any - pirmais ko varēju izdomāt, bet sapratu, ka negribu, lai mani terorizē par any izmantošanu
-//      pie tam man vēl 5dien tieši bija jāskaidro kāpēc izmantot any ir slikti
-
-//2. e: React.ChangeEvent<HTMLInputElement> - pirmais un populārākais ko atradu, bet kkas nav
-
-//3. atradu jau alternatīvu https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_oninput
 
 //4. https://stackoverflow.com/questions/40676343/typescript-input-onchange-event-target-value/72008067#72008067 - final
 

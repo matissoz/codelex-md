@@ -151,7 +151,7 @@ const output = document.querySelector(".output");
 
 //4. https://stackoverflow.com/questions/40676343/typescript-input-onchange-event-target-value/72008067#72008067 - final
 
- const inputChange = ((e: Event)=>{
+ const inputChange = ((e: KeyboardEvent)=>{
      output.textContent = ((e.target as HTMLInputElement).value);
  })
 

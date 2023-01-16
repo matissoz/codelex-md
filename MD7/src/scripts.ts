@@ -166,3 +166,7 @@ const output = document.querySelector(".output");
 // input.addEventListener('input',(e: Event)=>{
 //     output.textContent = ((e.target as HTMLInputElement).value);
 // })
+
+//  input.addEventListener('input',()=>{
+//      output.textContent = (input as HTMLInputElement).value;
+//  })

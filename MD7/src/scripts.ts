@@ -149,18 +149,42 @@ const input = document.querySelector(".input");
 const output = document.querySelector(".output");
 
 
-//4. https://stackoverflow.com/questions/40676343/typescript-input-onchange-event-target-value/72008067#72008067 - final
+//https://stackoverflow.com/questions/40676343/typescript-input-onchange-event-target-value/72008067#72008067
 
- const inputChange = ((e: KeyboardEvent)=>{
-     output.textContent = ((e.target as HTMLInputElement).value);
- })
 
- input.addEventListener('input', inputChange);
+input.addEventListener('input', (e: KeyboardEvent)=>{
+    output.textContent = (<HTMLInputElement>e.target).value;
+});
+
+ 
+//  const inputChange = ((e: KeyboardEvent)=>{
+//      output.textContent = (<HTMLInputElement>e.target).value;
+//  })
+
+//  input.addEventListener('input', inputChange);
+
+
+//  input.addEventListener('input',()=>{
+//      output.textContent = (input as HTMLInputElement).value;
+//  })
+
 
 // input.addEventListener('input',(e: Event)=>{
 //     output.textContent = ((e.target as HTMLInputElement).value);
 // })
 
-//  input.addEventListener('input',()=>{
-//      output.textContent = (input as HTMLInputElement).value;
+
+// const inputChange = ((e: Event)=>{
+//     output.textContent = ((e.target as HTMLInputElement).value);
+// })
+
+// input.addEventListener('input', inputChange);
+
+
+//  const inputChange = ((e: any)=>{
+//      output.textContent = e.target.value;
 //  })
+
+//  input.addEventListener('input', inputChange);
+
+

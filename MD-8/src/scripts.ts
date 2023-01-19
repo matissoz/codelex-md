@@ -70,7 +70,7 @@ const shuffle = (array: item[]) => {
 //reset the game
 const reset = (n: number) => {
     stopTimer();
-    
+
     winTitle.innerHTML= "";
     count[0].innerHTML = "Move count: 0";
     count[1].innerHTML = "Matches: 0/4";
@@ -182,8 +182,7 @@ const checkMatch = (toCheck: HTMLElement[]) =>{
 }
 
 
-
-initializeGame()
+//initializeGame();
 handleCardClick()
 document.querySelector('.start__btn').addEventListener('click', ()=>{
     initializeGame();

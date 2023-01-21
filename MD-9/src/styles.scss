@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Oswald:wght@300;400;600;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+  background-color: rgb(65, 65, 65);
+  font-family: "Oswald", "Helvetica Neue", Helvetica,;
+}
+
+header {
+  background-color: rgb(32, 32, 32);;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.89);
+}
+
+h1{
+  letter-spacing: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 0.1rem;
+  color: rgb(247, 247, 247);
+}
+
+h3{
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.indicator__wrapper{
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  align-items: center;
+  color: rgb(247, 247, 247);
+}
+
+.column{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.character__box{
+  color: rgba(226, 223, 223, 0.89);
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(37, 37, 37, 0.89);
+  display: flex;
+  overflow: hidden;
+}
+
+img{
+  width: 20rem;
+  height: 20rem;
+  border-right: 0.2rem solid black;
+}
+
+.indicator{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  transition: box-shadow 0.2s;
+}
+
+.text__wrapper{
+  display:flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.txt{
+  font-size: 1.4rem;
+  color: rgb(247, 247, 247);
+  font-weight: 400;
+}
+
+
+.Dead{
+  background-color: rgba(209, 37, 37, 0.89);
+  animation: pulse-Dead 1s ease-out infinite;
+}
+
+.Alive{
+  background-color: rgba(51, 209, 37, 0.89);
+  animation: pulse-Alive 1s ease-out infinite;
+}
+
+.unknown{
+  background-color: rgba(206, 209, 37, 0.89);
+  animation: pulse-Unknown 1s ease-out infinite;
+}
+
+.button__warpper{
+  display: flex;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.btn{
+  padding: 1rem;
+  border: 0.1rem solid black;
+  font-size: 4rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  &:hover{
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.89);
+  }
+}
+
+
+@-webkit-keyframes pulse-Dead {
+  0%   { box-shadow: 0 0 5px rgba(209, 37, 37, 0.89); }
+  50%  { box-shadow: 0 0 17px rgba(209, 37, 37, 0.89) }
+  100% { box-shadow: 0 0 5px rgba(209, 37, 37, 0.89); }
+}
+
+@-webkit-keyframes pulse-Alive {
+  0%   { box-shadow: 0 0 5px rgba(51, 209, 37, 0.89); }
+  50%  { box-shadow: 0 0 17px rgba(51, 209, 37, 0.89); }
+  100% { box-shadow: 0 0 5px rgba(51, 209, 37, 0.89); }
+}
+
+@-webkit-keyframes pulse-Unknown {
+  0%   { box-shadow: 0 0 5px rgba(206, 209, 37, 0.89); }
+  50%  { box-shadow: 0 0 17px rgba(206, 209, 37, 0.89); }
+  100% { box-shadow: 0 0 5px rgba(206, 209, 37, 0.89); }
+}
+

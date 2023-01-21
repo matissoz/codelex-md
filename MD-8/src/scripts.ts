@@ -24,8 +24,6 @@ let secondsTimer: string;
 let minutesTimer: string;
 let timerInterval: NodeJS.Timer;
 
-const arrayOfClasses = ['glow', 'match_glow', 'mismatch_glow', 'flip', 'match'];
-const arrayOfElements= [front, cards];
 
 //Timer
 const timerFunction = () => {
@@ -67,6 +65,8 @@ const shuffle = (array: item[]) => {
       
 }
 
+const arrayOfClasses = ['glow', 'match_glow', 'mismatch_glow', 'flip', 'match'];
+const arrayOfElements= [front, cards];
 //reset the game
 const reset = (n: number) => {
     stopTimer();

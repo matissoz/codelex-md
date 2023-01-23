@@ -72,3 +72,7 @@ const load = () =>{
 
 document.querySelector<HTMLAnchorElement>(".load__more")
     .addEventListener("click", load)
+
+let createObservable = (initial: any) => {
+	// (implement here)
+}

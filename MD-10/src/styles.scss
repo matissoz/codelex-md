@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2{
+  font-weight: 700;
+}
+
+p{
+  font-weight: 400;
+}
+
+.display{
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+
+.text__wrapper{
+  padding: 1rem;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.button__wrapper{
+  display: flex;
+}
+
+.btn{
+  width: 100%;
+  border: 0;
+  border-top: 0.1rem solid black;
+  text-decoration: none;
+
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.anchor__btn{
+  width: 100%;
+  border: 0;
+  border-top: 0.1rem solid black;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: white;
+  
+  &+.btn{
+    border-left: 0.1rem solid black;
+  }
+
+  &:hover{
+    transition: opacity 0.2s;
+    cursor: pointer;
+    opacity: .8;
+  }
+}
+
+.scrn{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(119, 118, 118, .7) ;
+  flex-direction: column;
+}
+
+
+#edit:target{
+  display: flex;
+}
+#add:target{
+  display: flex;
+}
+
+.addBtn{
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  font-size: 3rem;
+  margin-left: 3rem;
+
+  &:hover{
+    padding: 1rem;
+  }
+}
+
+header{
+  margin-top: 1rem;
+  position: fixed;
+}

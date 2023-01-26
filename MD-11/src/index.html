@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table is-fullwidth">
+        <thead>
+          <tr class="table__headers">
+            <th><span class="t__head-wrap"><a class="table__headers--element country__h" id="name">Country</a><span class="t__headers--symbol"></span></span></th>
+            <th><span class="t__head-wrap"><a class="table__headers--element capital__h" id="capital">Capital</a><span class="t__headers--symbol"></span></span></th>
+            <th><span class="t__head-wrap"><a class="table__headers--element currency__h" id="currency.name">Currency name</a><span class="t__headers--symbol"></span></span></th>
+            <th><span class="t__head-wrap"><a class="table__headers--element language__h" id="language.name">Language</a><span class="t__headers--symbol"></span></span></th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <span class="table__navigation">
+        <a class="previous__page">
+          <
+        </a>
+        <span class="table__numbers--nav">
+          
+        </span>
+        <a class="next__page">
+          >
+        </a>
+      </span>
+
+      <a class="button is-info is-rounded filter__button" href="#filter">Filter</a>
+      <a class="button is-info is-danger is-rounded filter__clear">Clear Filters</a>
+
+      <div class = "filter__scrn" id="filter">
+          <div class="input__wrapper">
+
+            <div class="field">
+              <label class="label">Country</label>
+              <div class="control">
+                <div class="name">
+                  <input class="input country_i" type="text"placeholder="Filter by Country">
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Capital</label>
+              <div class="control">
+                <div class="capital">
+                  <input class="input capital_i" type="text"placeholder="Filter by Capital">
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Currency</label>
+              <div class="control">
+                <div class="currency.name">
+                  <input class="input currency_i" type="text"placeholder="Filter by Currency">
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Language</label>
+              <div class="control">
+                <div class="language.name">
+                  <input class="input language_i" type="text" placeholder="Filter by Language">
+                </div>
+              </div>
+            </div>
+
+            <a class="button is-info is-rounded filter__search" href="#">Filter</a>
+            <a class="filter__close" href="#">X</a>
+          </div>
+      </div>
+    <script src="/scripts.js"></script>
+</body>
+</html>

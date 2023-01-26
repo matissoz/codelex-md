@@ -72,8 +72,8 @@ document.body.addEventListener( 'click', function ( event ) {
         });
     }
 
-    if((<HTMLButtonElement>event.target).classList.contains('editBtn')){
-        let id = (<HTMLButtonElement>event.target).parentElement.id;
+    if((<HTMLAnchorElement>event.target).classList.contains('editBtn')){
+        let id = (<HTMLAnchorElement>event.target).parentElement.id;
         document.body.addEventListener( 'click', function ( event ) {
             if((<HTMLAnchorElement>event.target).classList.contains('edit__Btn')){
                 console.log(id);

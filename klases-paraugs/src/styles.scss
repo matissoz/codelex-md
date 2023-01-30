@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  gap: 100px
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.circle__circle {
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  background-color: gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: transform 1s;
+}
+
+.circle__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: beige;
+  font-size: 20px;
+  border: 3px solid black;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.circle__circle--square {
+  border-radius: 0;
+  background-color: #d20404;
+}

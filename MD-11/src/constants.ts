@@ -1,6 +1,6 @@
 const apiURL = 'http://localhost:3004/countries?';
-const asc = ["&_sort=","&_order=asc"];
-const desc = ["&_sort=","&_order=desc"];
+const asc = ['&_sort=', '&_order=asc'];
+const desc = ['&_sort=', '&_order=desc'];
 const tableHeaderClass = ["country__h", "capital__h", "currency__h", "language__h"];
 const filterSearch = "_like=";
 const tableHeaderIDs = ["capital", "name", "currency.name", "language.name"];
@@ -36,5 +36,12 @@ type Country = {
 //   }
 // }
 
-
-export {apiURL, Country, asc, desc, tableHeaderClass, filterSearch, tHeadSymbAscDesc, tableHeaderIDs}
+export {
+  apiURL,
+  Country,
+  asc,
+  desc,
+  tableHeaderClass,
+  filterSearch,
+  tHeadSymbAscDesc,
+  tableHeaderIDs}

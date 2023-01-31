@@ -17,12 +17,22 @@ function App() {
 
   }
 
+  function crossOut(e){
+    const parentEl = e.target.parentElement;
+    
+   if(parentEl.classList.contains('checked')){
+      parentEl.classList.remove('checked');
+   }else{
+      parentEl.classList.add('checked');
+   }
+  }
+
 
   return (
     <div className="App">
       <ul>
         {
-          todo.map(item =><li>{item}<input type="checkbox"/></li>)
+          todo.map(item =><li>{item}<input type="checkbox" onChange={crossOut}/></li>)
         }
       </ul>
       <form onSubmit={addTodo}>

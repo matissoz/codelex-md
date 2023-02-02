@@ -1,22 +1,3 @@
 {
-  "notes": [
-    {
-      "title": "f",
-      "text": "ffffff",
-      "img": "https://picsum.photos/300",
-      "id": 4
-    },
-    {
-      "title": "nji",
-      "text": "jiji",
-      "img": "https://picsum.photos/300",
-      "id": 5
-    },
-    {
-      "title": "nn",
-      "text": "iiji",
-      "img": "https://picsum.photos/300",
-      "id": 6
-    }
-  ]
+  "notes": []
 }

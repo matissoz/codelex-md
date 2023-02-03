@@ -49,7 +49,7 @@ const emailValidate = (email: string) =>{
 const checkEmailFormat = ((email: string) =>{
     const emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return emailRegex.test(String(email));
-}) 
+})
 
 
 
@@ -104,5 +104,5 @@ const checkPasswordFormat = ((password:string)=>{
     const passwordRegex = /^(?=.*?[0-9])(?=.*?[#?!@$%^&*-])[A-Za-z\d@$!%*#?&]{8,}$/;//checks length also
     return passwordRegex.test(password);
 })
-
+//update from webstorm
 export {emailValidate, nameValidate, passwordValidate, checkNameFormat, checkNameLength, checkPasswordFormat, checkEmailFormat};

@@ -1,0 +1,17 @@
+.wrap{
+    display: flex;
+    gap: 1rem;
+}
+
+.kaste5{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+
+.kaste2{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    background-color: gold;
+}

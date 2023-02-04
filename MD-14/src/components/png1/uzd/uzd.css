@@ -1,0 +1,28 @@
+.kastes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kaste4{
+    border: 1px solid black;
+    background-color: rgb(78, 114, 25);
+    padding: 10px 30px;
+}
+
+.wrap5{
+    display: flex;
+}
+
+
+.kaste5{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}

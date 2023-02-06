@@ -5,9 +5,10 @@ import Card from "../components/CharacterCardDisplay/CharacterCard/Card";
 
 type Props = {
     maxCharacters: number;
+    idClick?: number;
 }
 
-const Character = (( {maxCharacters}: Props ) =>{
+const Character = (( {maxCharacters, idClick}: Props ) =>{
 
     const { id } = useParams();
     const currentID = Number(id);

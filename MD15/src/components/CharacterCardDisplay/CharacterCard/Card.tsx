@@ -1,4 +1,5 @@
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import { CharacterType } from "../../../api/api";
 import "./card.scss"
 
@@ -8,9 +9,14 @@ type Props = {
 }
 
 const Card = (({character}: Props) =>{
-
+    
+    const navigate = useNavigate();
+    const navigateToCharacter = () => {
+        // 👇️ navigate to /contacts
+        navigate(`/characters/${character.id}`);
+      };
     return(
-        <div className="character__box">
+        <div className="character__box" onClick={navigateToCharacter}>
             <img src={character.image} />
 
             <span className="text__wrapper">

@@ -12,9 +12,9 @@ const Card = (({character}: Props) =>{
     
     const navigate = useNavigate();
     const navigateToCharacter = () => {
-        // 👇️ navigate to /contacts
         navigate(`/characters/${character.id}`);
-      };
+    };
+
     return(
         <div className="character__box" onClick={navigateToCharacter}>
             <img src={character.image} />

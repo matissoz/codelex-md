@@ -1,0 +1,13 @@
+
+.navLink{
+    box-shadow: 0 10px 10px -5px rgba(5, 255, 201, 0.89);
+    transition: box-shadow 0.3s;
+    &:hover{
+        box-shadow: 0 0 10px rgba(5, 255, 201, 0.89);
+    }
+}
+
+.active{
+    box-shadow: 0 0 10px rgba(5, 255, 201, 0.89);
+    transition: box-shadow 0.3s;
+}

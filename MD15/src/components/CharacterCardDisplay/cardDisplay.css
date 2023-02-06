@@ -1,0 +1,7 @@
+.card__display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: stretch;
+    margin: 2rem 4rem;
+}

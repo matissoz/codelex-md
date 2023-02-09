@@ -1,0 +1,25 @@
+.form__wrapper{
+    display: flex;
+    flex-direction: row;
+    border: 1rem solid #E7473C;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form__button{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+    border: 0.1rem solid #E7473C;
+    background-color: #E7473C;
+    color: white;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color:#E7473C
+    }
+}

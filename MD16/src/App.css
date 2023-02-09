@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto; 
+  background-color: #F0F0F0;
+}
+
+.singlePostPage{
+  display: flex;
+}
+
+footer{
+  background-color: #E7473C;
+  color: #F0F0F0;
+}

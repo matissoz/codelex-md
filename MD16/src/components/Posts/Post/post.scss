@@ -1,0 +1,58 @@
+.post__card{
+    border-radius: 1rem;
+    max-width: 19rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: #E7473C;
+    color:#F0F0F0;
+    text-align: center;
+}
+
+.wrapper{
+    padding: 0.5rem;
+    border: 0.1rem solid #F0F0F0;
+    border-radius: 0.5rem;
+    height: 28rem;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.image{
+    width: 100%;
+    padding: 0.2rem;
+    border-bottom: 0.1rem solid #F0F0F0;
+    border-top: 0.1rem solid #F0F0F0;
+    border-radius: 0.5rem;
+}
+
+.post__title{
+    font-weight: 700;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1rem;
+}
+
+.post__text{
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    height: 78px;
+    word-wrap: break-word;
+}
+
+.readmore__btn{
+    padding: 0.3rem 0.7rem;
+    border: 0.1rem solid white;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color:#E7473C
+    }
+}

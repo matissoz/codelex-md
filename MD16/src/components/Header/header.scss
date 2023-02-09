@@ -1,0 +1,34 @@
+.header{
+    background-color: #E7473C;
+    color: #F0F0F0;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.navLink__wrapper{
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+.navLink{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.logo__wrapper{
+    display: flex;
+}
+
+.logo__text{
+    color: #F0F0F0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.active{
+    text-decoration: underline;
+}

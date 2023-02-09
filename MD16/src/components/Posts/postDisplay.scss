@@ -1,0 +1,8 @@
+.post__display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 1rem;
+    border: 1rem solid #E7473C;
+    gap: 1rem;
+}

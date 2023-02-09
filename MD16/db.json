@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "title": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia neque nec quam vehicula tempor. Duis mauris purus, rhoncus non maximus et, scelerisque vel libero. Aliquam erat diam, tincidunt in nulla ut, consequat pharetra massa.",
+      "img": "https://picsum.photos/id/20/300/300",
+      "imgId": "20",
+      "id": 1
+    },
+    {
+      "title": "ccccccc",
+      "text": "dddd dddd dddddddd ddddddd dddddd d",
+      "img": "https://picsum.photos/id/21/300/300",
+      "imgId": "21",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "author": "Arthur",
+      "text": "Comment",
+      "postId": "1",
+      "id": 1
+    },
+    {
+      "author": "Jim",
+      "text": "I think...",
+      "postId": "1",
+      "id": 2
+    }
+  ]
+}

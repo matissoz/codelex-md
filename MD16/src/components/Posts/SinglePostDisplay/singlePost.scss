@@ -1,0 +1,36 @@
+.sp_post__display{
+    display: flex;
+    flex-direction: row;
+    border: 1rem solid #E7473C;
+    padding: 0.5rem;
+    gap: 0.3rem
+}
+
+.sp_text__wrapper{
+    width: 100%;
+    padding: 1rem;
+    background-color: #E7473C;
+    color:white;
+    text-align: center;
+}
+
+.sp_image{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+
+.sp_post__title{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.button__wrapper{
+    display: flex;
+}
+
+.sp__btn{
+    background-color: #E7473C;
+    color:white;
+    border: 0.1rem solid white;
+}

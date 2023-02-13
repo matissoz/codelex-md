@@ -21,14 +21,13 @@ const CommentSection = (({postId}: Props) =>{
     if(getCommentQuery.isError) return <div>Loading..</div>;
 
     const commentData: CommentType[] = getCommentQuery.data;
-    console.log(commentData)
 
     return (
     <div className="commentSection">
         <h2>Comment section</h2>
         <div className='commentary__border'>
             {commentData.map(commentData => 
-            <div className='commentary__Wrapper'>
+            <div className='commentary__Wrapper' key={commentData.id}>
                 <Commentary data={commentData}/>
             </div>
             )}

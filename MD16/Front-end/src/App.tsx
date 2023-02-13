@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import { Route, Routes } from 'react-router-dom';
-import { getPosts } from './api/api';
+import { getImages, getPosts } from './api/api';
 import './App.css'
 import Footer from './components/Footer/footer';
 import Header from './components/Header/Header';
-import About from './pages/About';
+import Uplaod from './pages/About';
 import Blog from './pages/Blog';
 import CreatePost from './pages/createPost';
 import Home from './pages/Home';
@@ -18,6 +18,12 @@ function App() {
     queryFn: getPosts,
     keepPreviousData: true,
   });
+
+  const imagesQuery = useQuery({
+    queryKey: ['images'],
+    queryFn: getImages,
+    keepPreviousData: true,
+});
 
   return (
     <>
@@ -33,7 +39,10 @@ function App() {
         <Route path="/blog/:id" element={
           <SinglePostPage />
         }/>
-        <Route path="/about" element={<About />}/>
+        <Route path="/about" element={
+        <Uplaod 
+
+        />}/>
       </Routes>
       <footer>
         <Footer/>

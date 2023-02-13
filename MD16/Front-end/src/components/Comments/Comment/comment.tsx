@@ -9,7 +9,6 @@ type Props={
 }
 
 const Commentary = (({data}: Props) =>{
-
     const DeleteCommentMutation = useMutation({
         mutationFn: deleteComment,
     });

@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { deleteAllComments, deleteComment, deletePost, editPost } from '../../../api/api';
+import { deleteComment, deletePost, editPost } from '../../../api/api';
 import { PostType } from '../../../api/types';
 import CommentSection from '../../Comments/CommentSection/commentSection';
 import Form from '../../Form/form';
@@ -23,13 +23,9 @@ const SinglePost = (({post}: Props) => {
         mutationFn: deletePost,
     })
     
-    const DeleteCommentMutation = useMutation({
-        mutationFn: deleteAllComments,
-    });
 
     const handleDelete = (() =>{
         DeletePostMutation.mutate(post.id)
-        DeleteCommentMutation.mutate(post.id)
         navigateToBlog();
         window.location.reload();
     });

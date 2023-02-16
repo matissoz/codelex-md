@@ -1,0 +1,26 @@
+/* font w -400 -500 -700*/
+.header{
+    background-color: #ffd55a;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// color: #6dd47e; 
+
+.header__nav{
+    display: flex;
+    gap: 2rem
+}
+
+.navLink{
+    color: #293253;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-left: 0.1rem solid #ffd55a;
+    border-right: 0.1rem solid #ffd55a;
+    padding: 0rem 0.2rem;
+    //active link style in index.css
+}

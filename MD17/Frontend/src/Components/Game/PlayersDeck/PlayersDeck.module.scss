@@ -1,0 +1,20 @@
+.deck{
+    display: flex;
+    gap: 2rem;
+}
+
+.deck__weapon{
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    border: 0.3rem solid black;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.2s;
+
+    &:hover{
+        border: 0.3rem solid rgb(6, 194, 241);
+        cursor: pointer;
+    }
+}

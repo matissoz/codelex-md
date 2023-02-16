@@ -1,0 +1,24 @@
+.homepage{
+    padding: 7rem 3rem;
+}
+
+.homepage__hero{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.navLink{
+    font-size: 4rem;
+    text-decoration: none;
+    color: white;
+    border: 0.2rem solid white;
+    padding: 0.5rem 1.5rem;
+
+    &:hover{
+        color: #293253;;
+        background-color: white;
+    }
+}

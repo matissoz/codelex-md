@@ -1,0 +1,26 @@
+.decision{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0rem 1rem;
+    line-height: 3.3rem;
+    color: white;
+    margin-left: 8rem;
+}
+
+.field_active{
+    box-shadow: 0 0 10px rgba(0, 195, 255, 0.89);
+}
+
+.field_draw{
+    box-shadow: 0 0 10px rgba(251, 255, 0, 0.89);
+    color: rgba(251, 255, 0, 0.89);
+}
+.field_win{
+    box-shadow: 0 0 10px rgba(0, 255, 34, 0.89);
+    color: rgba(0, 255, 34, 0.89);
+}
+.field_lost{
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.89);
+    color: rgba(255, 0, 0, 0.89);
+}
+

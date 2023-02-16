@@ -1,0 +1,15 @@
+{
+    "home": "Home",
+    "game": "Game",
+    "play": "Play",
+    "scoreboard": "Scoreboard",
+    "submit": "Submit my score",
+    "placeholder": "Your name",
+    "warning": "score must not be 0 to Submit",
+    "Draw": "Draw",
+    "Win": "Win",
+    "Lost": "Lost",
+    "letsplay": "Let's play",
+    "name": "Name",
+    "score": "Score"
+}

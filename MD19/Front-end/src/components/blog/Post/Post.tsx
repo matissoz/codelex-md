@@ -10,9 +10,13 @@ type Props ={
 }
 
 const Post = (({post}: Props) => {
+    const queryClient = useQueryClient()
 
     const deleteBlogMutation = useMutation({
         mutationFn: deleteBlog,
+        onSuccess: () =>{
+            queryClient.invalidateQueries()
+        }
       })
     
     const handleDelete = (() =>{

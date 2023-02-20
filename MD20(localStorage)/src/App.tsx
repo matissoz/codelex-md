@@ -25,14 +25,9 @@ function App() {
     <div className="App">
       <AddBar/>
       <SearchBar/>
-      {/* Kods itkā nestrādā, bet webā viss strādā :D */}
+      {/* If statement  nemaz nav vajadzigs, var mapot uzreiz */}
       <div className='CardDisplay'>
-        {animals === searchAnimals ? 
-          (animals.map((animal) => <AnimalCard animal={animal}/>)
-          ):(
-            searchAnimals.map((animal) => <AnimalCard animal={animal}/>)
-          )
-        }
+        {animals && searchAnimals.map((animal) => <AnimalCard animal={animal}/>)}
       </div>
     </div>
   )

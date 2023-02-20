@@ -1,0 +1,13 @@
+form{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    border: 0.1rem solid;
+}
+
+.addbar{
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 0.1rem solid;
+}

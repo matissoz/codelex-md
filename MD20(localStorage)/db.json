@@ -1,0 +1,40 @@
+{
+  "animals": [
+    {
+      "name": "Lorem ipsumss dolor",
+      "breed": "Lorem",
+      "image": "https://picsum.photos/id/20/300/300",
+      "id": 1
+    },
+    {
+      "name": "Lorem ipsumss dolor2",
+      "breed": "ipsum ",
+      "image": "https://picsum.photos/id/20/300/300",
+      "id": 2
+    },
+    {
+      "name": "Lorem ipsumss dolor2",
+      "breed": "dolor",
+      "image": "https://picsum.photos/id/20/300/300",
+      "id": 3
+    },
+    {
+      "name": "Lorem ipsumss dolor2",
+      "breed": "amet",
+      "image": "https://picsum.photos/id/20/300/300",
+      "id": 4
+    },
+    {
+      "name": "Lorem ipsumss dolor2",
+      "breed": "consectetur",
+      "image": "https://picsum.photos/id/20/300/300",
+      "id": 5
+    },
+    {
+      "id": "lecr5202",
+      "name": "dsad",
+      "image": "dsadas",
+      "breed": "asdsadsa"
+    }
+  ]
+}

@@ -3,14 +3,18 @@ import type { AnimalType } from './types'
 
 // Define a service using a base URL and expected endpoints
 export const animalApi = createApi({
+
   reducerPath: 'animalApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3004/' }),
   tagTypes: ['animal'],
+
   endpoints: (builder) => ({
+
     getAllAnimals: builder.query<AnimalType, void>({
       query: () => `all-animals`,
       providesTags: ['animal']
     }),
+
     deleteAnimal: builder.mutation({
       query: (id) => ({
         url: `delete-animal/${id}`,
@@ -18,6 +22,7 @@ export const animalApi = createApi({
       }),
       invalidatesTags: ['animal']
     }),
+
     addAnimal: builder.mutation({
       query: ({name, image, breed}) => ({
         url: `add-animal`,
@@ -25,7 +30,8 @@ export const animalApi = createApi({
         body: {name, image, breed}
       }),
       invalidatesTags: ['animal']
-    }),
+    })
+
   }),
 })
 

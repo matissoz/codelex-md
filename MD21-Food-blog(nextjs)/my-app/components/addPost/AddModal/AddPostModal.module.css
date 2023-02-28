@@ -1,0 +1,42 @@
+.modal{
+    background: rgba(0, 0, 0, 0.329);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal__body{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.form input, .form textarea{
+    border: 0.125rem solid black;
+    padding: 0.3rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.submitButton{
+    background-color: rgb(20, 194, 20);
+    border: 0;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

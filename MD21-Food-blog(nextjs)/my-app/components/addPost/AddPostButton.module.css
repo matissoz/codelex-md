@@ -1,0 +1,8 @@
+.addButton{
+    background-color: rgb(17, 212, 17);
+    padding: 1rem;
+}
+
+.addButton__text{
+    color: white;
+}

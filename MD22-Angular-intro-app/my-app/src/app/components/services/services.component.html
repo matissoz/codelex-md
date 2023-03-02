@@ -1,0 +1,27 @@
+<div class="services">
+    <div class="service__list">
+        <div *ngFor="let service of services">
+            <button 
+                class="service__item"   
+                type="button" 
+                (click)="onSelect(service)"
+                [class.selected]="checkSelectedValues(service)"
+            >
+                <span class="name">{{service.name}}</span>
+                <br/>
+                <span class="name">${{service.price}}</span>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <label [class.max]="selectedServices.length == 4" >Price: ${{price}}</label>
+    </div>
+</div>
+
+<div *ngIf="selectedServices.length > 0">
+    <h2>You've selected: </h2>
+    <div *ngFor="let service of selectedServices; let i = index">
+        <h2>{{i+1}}.{{service.name | uppercase}}</h2>
+    </div>
+</div>

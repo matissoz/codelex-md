@@ -6,16 +6,16 @@ import { Service, SERVICES } from './services-data';
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
+
 export class ServicesComponent {
   services = SERVICES;
-
   price: number = 0.00;
   selectedServices: Service[] = [];
 
   onSelect(service: Service) {
-    if(this.checkSelectedValues(service)){
+    if(this.checkSelectedValues(service)) {
       this.removeAlreadySelectedValue(service);
-    }else{
+    } else {
       this.addNewValue(service);
     }
   }
@@ -24,7 +24,7 @@ export class ServicesComponent {
     return this.selectedServices.includes(service);
   }
 
-  removeAlreadySelectedValue(service: Service){
+  removeAlreadySelectedValue(service: Service) {
     this.selectedServices = this.selectedServices.filter(serv => serv != service)
     this.price -= service.price;
   }

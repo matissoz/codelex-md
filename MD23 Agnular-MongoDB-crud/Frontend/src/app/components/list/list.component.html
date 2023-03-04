@@ -1,0 +1,9 @@
+<div class="list">
+    <div *ngFor="let animal of animals" class="list__item">
+        <span class="list__item--items">
+            <p>Name: {{animal.name}}</p>
+            <p>Breed: {{animal.breed}}</p>
+        </span>
+        <button (click)="sendDeleteRequest(animal._id)" class="list__button">X</button>
+    </div>
+</div>

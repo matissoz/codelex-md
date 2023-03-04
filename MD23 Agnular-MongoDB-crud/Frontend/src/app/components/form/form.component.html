@@ -1,0 +1,19 @@
+
+<form [formGroup]="animalForm" (ngSubmit)="sendAddRequest()" class="form">
+  
+  <span>
+    <label for="name" class="label">Name: </label>
+    <input id="name" class="input" type="text" formControlName="name" required placeholder="name...">
+  </span>
+
+  <select name="cars" id="cars" formControlName="breed" class="input">
+    <option *ngFor="let breed of breeds" [value]="breed">
+      {{breed | uppercase}}
+    </option>
+  </select>
+
+  <button class="button">
+    Add new
+  </button>
+
+</form>

@@ -1,0 +1,29 @@
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.list__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+
+    & +.list__item{
+        border-top: 0.1rem solid black;
+    }
+}
+
+.list__item--items{
+    gap: 1rem;
+    display: flex;
+}
+
+.list__button{
+    padding: 1rem 1.1rem;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover{
+        background-color: red;
+    }
+}

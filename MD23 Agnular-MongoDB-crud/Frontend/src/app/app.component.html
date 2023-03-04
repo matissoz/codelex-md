@@ -1,0 +1,14 @@
+<div class="container">
+  <app-switch
+    (filter)="recieveFilterRequest($event)"
+  ></app-switch>
+
+  <app-form 
+  (add)="recieveAddRequest($event)"
+  ></app-form>
+  
+  <app-list
+    (delete)="recieveDeleteRequest($event)"
+    [animals]="animals"
+  ></app-list>
+</div>

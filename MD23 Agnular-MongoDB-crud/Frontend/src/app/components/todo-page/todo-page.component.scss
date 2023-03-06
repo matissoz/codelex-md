@@ -1,0 +1,14 @@
+.todo__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.todo__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+
+    & + &{
+        border-top: 0.1rem solid black;
+    }
+}

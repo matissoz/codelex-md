@@ -3,3 +3,22 @@
     padding: 2rem;
     margin: 1rem;
 }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar__link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: Black;
+    cursor: pointer;
+    border: 0.1rem solid black;
+    padding: 0.3rem 0.8rem;
+}
+
+.active{
+    background-color: white;
+}

@@ -1,14 +1,24 @@
 <div class="container">
-  <app-switch
-    (filter)="recieveFilterRequest($event)"
-  ></app-switch>
+  <nav class="navbar">
+    <a 
+      routerLink="/animals" 
+      class="navbar__link" 
+      routerLinkActive="active" 
+      ariaCurrentWhenActive="page"
+    >
+      Animals
+    </a>
+    <a 
+      routerLink="/todo" 
+      class="navbar__link" 
+      routerLinkActive="active" 
+      ariaCurrentWhenActive="page"
+    >
+      Todo
+    </a>
+  </nav>
+  <hr/>
 
-  <app-form 
-  (add)="recieveAddRequest($event)"
-  ></app-form>
-  
-  <app-list
-    (delete)="recieveDeleteRequest($event)"
-    [animals]="animals"
-  ></app-list>
+  <router-outlet></router-outlet>
+
 </div>

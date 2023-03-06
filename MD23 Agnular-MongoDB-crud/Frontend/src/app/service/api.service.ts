@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+import { map } from 'rxjs/operators';
 
 export type Animal = {
   _id: string,
@@ -8,6 +9,7 @@ export type Animal = {
 }
 
 export type NewAnimalType = {
+  _id?:string,
   name: string,
   breed: "dog" | "cat"
 }
@@ -22,6 +24,12 @@ export class ApiService {
 
   getData() {
     return this._http.get<Animal[]>('http://localhost:3004/all-animals');
+  }
+
+  getDataTodo() {
+    return this._http
+      .get<Animal[]>('http://localhost:3004/all-animals')
+      .pipe(map((todo) => todo || []));
   }
   
   deleteAnimal(id: string) {

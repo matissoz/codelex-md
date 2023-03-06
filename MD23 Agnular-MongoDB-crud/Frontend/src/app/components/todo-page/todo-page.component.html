@@ -1,0 +1,10 @@
+<app-form 
+    (add)="add($event)"
+></app-form>
+
+<div class="todo__list">
+    <div *ngFor="let todo of todo$ | async" class="todo__item">
+            <h2>{{todo.name}}</h2>
+            <button (click) = "delete(todo._id)">delete</button>
+    </div>
+</div>

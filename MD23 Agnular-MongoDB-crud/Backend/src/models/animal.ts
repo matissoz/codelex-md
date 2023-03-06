@@ -7,7 +7,7 @@ const AnimalSchema = new Schema({
     },
     breed: {
         type: String,
-        required: true
+        required: true 
     },
 })
 

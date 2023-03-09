@@ -56,9 +56,9 @@ export const addComment = (async (author, text, postId) => {
 
 export const editPost = (async (id, title, text, img, imgId) => {
     const [rows] = await db.query(`
-    UPDATE Posts
-    SET title =?, text=?, img =?, imgId=?
-    WHERE id =?
+        UPDATE Posts
+        SET title =?, text=?, img =?, imgId=?
+        WHERE id =?
     `, [title, text, img, imgId, id]);
 });
 

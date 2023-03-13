@@ -24,7 +24,7 @@ app.post("/score", async (req: Request, res: Response) => {
   const post = await addScores(name, score)
   res.status(201).send(post);
 });
-
+ 
 app.listen(3004, () => {
   console.log("Application started on port 3004!");
 });

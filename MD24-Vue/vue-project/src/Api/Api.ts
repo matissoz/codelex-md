@@ -36,8 +36,8 @@ export const store = reactive({
   data: [] as Array<JokeType>,
   favourites: [] as Array<FavouriteJokeType>,
 
-  getData() {
-    axios
+  async getData() {
+    return await axios
       .get<ApiResponseType>(`https://v2.jokeapi.dev/joke/Programming?type=single&amount=10`)
       .then(({ data }) => (this.data = data.jokes))
   },

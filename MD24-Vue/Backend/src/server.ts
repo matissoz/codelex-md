@@ -21,7 +21,7 @@ app.post("/add-favourite-joke", (req: Request, res: Response) => {
   });
 
   crud.save() 
-    .then((results) => {
+    .then((results) => { 
       res.send(results)
     })
     .catch((err) =>{
@@ -41,7 +41,7 @@ app.get("/all-favourite-jokes", (req: Request, res: Response) => {
     console.log(err); 
   });
 
-});
+}); 
 
 
 app.delete("/delete-favourite-joke/:id", (req: Request, res: Response) => {

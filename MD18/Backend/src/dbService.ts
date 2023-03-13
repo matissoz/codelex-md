@@ -2,7 +2,7 @@ import mysql from 'mysql2'
 
 const db = mysql.createPool({
     connectionLimit: 10,
-    host: "127.0.0.1",
+    host: "localhost",
     user: "root",
     password: "123456",
     database: "game",
@@ -12,7 +12,7 @@ const db = mysql.createPool({
 export const getScores = (async () => {
     const [rows] = await db.query(`
         SELECT *
-        FROM score
+        FROM gamescore
     `);
 
     return rows;
@@ -20,7 +20,7 @@ export const getScores = (async () => {
 
 export const addScores = (async (name, score) => {
     const [rows] = await db.query(`
-        INSERT INTO score
+        INSERT INTO gamescore
         (name, score)
         VALUES(?, ?)
     `, [name, score]);

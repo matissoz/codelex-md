@@ -1,9 +1,8 @@
-<script setup lang="ts">
+<script lang="ts">
 import { store } from '@/Api/Api'
-import { defineComponent } from 'vue'
 import Card from './Card.vue'
 
-defineComponent({
+export default({
   
   data() {
     return {
@@ -11,11 +10,12 @@ defineComponent({
     }
   },
 
-  // created() {
-  //   this.store.getData()
-  // },  
+  mounted() {
+    this.store.getData()
+  }
+
 })
-</script>
+</script> 
 
 <template>
   <div class="list">
@@ -24,12 +24,12 @@ defineComponent({
       Load Jokes
     </button>
     <p>click on joke to add to favourites</p>
-    <div 
-      v-for="data in store.data" 
-      @click="store.addToFavorite(data.joke, data.category)"
-    >
-      <Card :data="data" />
-    </div>
+      <div 
+        v-for="data in store.data" 
+        @click="store.addToFavorite(data.joke, data.category)"
+      >
+        <Card :data="data" />
+      </div>
   </div>
 </template>
 

@@ -48,12 +48,13 @@ export type Weather = {
 export const useWeatherStore = defineStore('counter', () => {
   const weather = ref<Weather | null>(null)
   const isLoading = ref(false);
+  const api_token = "d1111111111111111111111111111d" 
 
   async function getData(city: string) {
     isLoading.value = true;
 
     weather.value = await axios
-      .get<Weather>(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d5054a23b844e748288c991ccba68a0d`)
+      .get<Weather>(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_token}`)
       .then(response => response.data);
 
     isLoading.value = false;
